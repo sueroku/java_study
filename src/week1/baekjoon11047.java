@@ -9,7 +9,7 @@ public class baekjoon11047 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int k = sc.nextInt();
-        int coin [] = new int[n];
+        int[] coin = new int[n];
         for(int i=0;i<n;i++){
             coin[i] = sc.nextInt();
         }

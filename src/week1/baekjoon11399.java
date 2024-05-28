@@ -10,7 +10,7 @@ public class baekjoon11399 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         
-        int timeP [] = new int[n];
+        int[] timeP = new int[n];
         for(int i=0;i<n;i++){
             timeP[i] = sc.nextInt();
         }
