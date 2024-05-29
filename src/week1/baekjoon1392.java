@@ -1,7 +1,8 @@
 package week1;
 
-// 배열
+// 리스트
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -19,6 +20,20 @@ public class baekjoon1392 {
         }
         for(int i=0;i<q;i++){
             q_time[i]=sc.nextInt();
+        }
+
+        int totalTime = Arrays.stream(music).sum();
+
+        ArrayList<Integer> time = new ArrayList<>();
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<music[i];j++){
+                time.add(i+1);
+            }
+        }
+
+        for(int i=0;i<q;i++){
+            System.out.println(time.get(q_time[i]));
         }
 
         sc.close();
