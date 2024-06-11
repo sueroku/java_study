@@ -6,15 +6,19 @@ import java.util.Scanner;
 public class Baekjoon1920 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int N = sc.nextInt();
         int[] numbers = new int[N];
         for(int i=0;i<N;i++){
             numbers[i] = sc.nextInt();}
+
         int M = sc.nextInt();
         int[] targets = new int[M];
         for(int i=0;i<M;i++){
             targets[i] = sc.nextInt();}
+
         Arrays.sort(numbers);
+
         for(int i=0;i<M;i++){
             if(binarySearch(numbers,targets[i])){
                 System.out.println(1);
